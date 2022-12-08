@@ -1,8 +1,7 @@
 body {
-  margin: 0px;
-  padding: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0 50px 50px 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
   line-height: 1.4em;
 }
 .header {
@@ -11,11 +10,11 @@ body {
   background-image: url("../images/apple-pie.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 80%;
   color: white;
   display: flex;
-  font-size: 1.4em;
-  height: 400px;
+  font-size: 1.7em;
+  height: 500px;
   justify-content: center;
 }
 main {
@@ -26,6 +25,12 @@ p {
   font-size: 1em;
   font-weight: lighter;
   margin: 5%;
+}
+
+h2 {
+  font-size: 1.2em;
+  /* font-weight: 300; */
+  margin: 1.5em;
 }
 #first-image {
   display: block;
@@ -40,11 +45,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-h2 {
-  font-size: 1em;
-  font-weight: normal;
-  margin: 2em;
-}
+
 .ingredients {
   font-size: 0.9em;
   list-style-type: "- ";
@@ -55,11 +56,9 @@ h2 {
 ol {
   counter-reset: list;
 }
-
 ol > li {
   list-style: none;
 }
-
 ol > li:before {
   content: counter(list) ") ";
   counter-increment: list;
